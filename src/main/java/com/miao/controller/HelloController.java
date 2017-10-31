@@ -1,4 +1,4 @@
-package com.miao;
+package com.miao.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
