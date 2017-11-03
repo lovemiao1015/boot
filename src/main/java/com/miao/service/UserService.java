@@ -2,6 +2,7 @@ package com.miao.service;
 
 import com.miao.pojo.User;
 
+import java.util.List;
 import java.util.zip.ZipFile;
 
 /**
@@ -10,11 +11,11 @@ import java.util.zip.ZipFile;
  */
 public interface UserService {
 
-    User findByUsername(String username);
+    User findByName(String name);
 
     void save(User user);
 
-    ZipFile findAll();
+    List<User> findAll();
 
     User findOne(long l);
 

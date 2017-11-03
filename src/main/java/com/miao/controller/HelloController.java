@@ -3,6 +3,7 @@ package com.miao.controller;
 import com.miao.exception.MyException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by skf
@@ -24,9 +25,10 @@ public class HelloController {
 //    }
 
     @RequestMapping("/hello")
-    public String hello() throws Exception {
+    @ResponseBody
+    public String hello(String  name ) throws Exception {
         System.out.println("hello world");
-        return "hello";
+        return "hello"+name;
     }
 
     @RequestMapping("/json")
