@@ -40,4 +40,9 @@ public class HelloController {
     public String login() {
         return "login";
     }
+
+    @RequestMapping("/test")
+    public String test(){
+        return "test";
+    }
 }
